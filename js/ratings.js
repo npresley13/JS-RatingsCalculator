@@ -3,7 +3,7 @@ function collect_ratings() {
         'count': 0,
         'sum': 0,
         'average': 0
-    } 
+    };
     let rating = 0;
     
     const elements = document.querySelectorAll(".rating");
@@ -22,7 +22,7 @@ function collect_ratings() {
 
 document.addEventListener("change", () => {
     const ratings = collect_ratings();
-    ratings.average.toFixed(2) = document.querySelector("#average").value;
+    document.getElementById("average").value = ratings.average.toFixed(2);
 });
 
 
